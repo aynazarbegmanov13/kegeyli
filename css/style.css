@@ -249,7 +249,6 @@ html::-webkit-scrollbar-thumb {
     line-height: 1.8;
     padding: 1rem 0;
 }
-
 .plan .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -447,51 +446,6 @@ html::-webkit-scrollbar-thumb {
     color: var(--blue);
 }
 
-
-/* media queries  */
-
-@media (max-width:991px) {
-    html {
-        font-size: 55%;
-    }
-    .header {
-        padding: 2rem;
-    }
-    section {
-        padding: 2rem;
-    }
-}
-
-@media (max-width:768px) {
-    #menu-btn {
-        display: initial;
-    }
-    #menu-btn.fa-times {
-        transform: rotate(180deg);
-    }
-    .header .navbar {
-        position: absolute;
-        top: 99%;
-        left: 0;
-        right: 0;
-        background: var(--black);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    .header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-    .header .navbar a {
-        font-size: 2rem;
-        margin: 2.5rem 2rem;
-        display: block;
-    }
-}
-
-@media (max-width:450px) {
-    html {
-        font-size: 50%;
-    }
-}
 .dropbtn {
   background-color: var(--black);
   color: #fff;
@@ -530,3 +484,47 @@ html::-webkit-scrollbar-thumb {
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+/* media queries  */
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+@media (max-width:768px) {
+    #menu-btn {
+        display: initial;
+    }
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: var(--black);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2.5rem 2rem;
+        display: block;
+    }
+    .show {position: relative;}
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}
